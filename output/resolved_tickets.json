@@ -1,0 +1,52 @@
+{
+  "run": {
+    "reset_before_run": true,
+    "starting_checking_balance": 3400.0,
+    "ending_checking_balance": 3400.0,
+    "payments_made": [],
+    "cash_reconciliation": "No human approval was given. Each ticket changed checking by $0.00, so the ending balance matches cash_accounts."
+  },
+  "tickets": [
+    {
+      "id": 101,
+      "final_status": "resolved",
+      "short_outcome": "Held the customer order: size-S tee stock is zero, the shortage is one, and the linked $840 invoice must be reconciled before any reprint or payment.",
+      "agents": {
+        "Boss": "Delegated Inventory first, then Accounting and Customer Service, and made the final hold decision.",
+        "Inventory": "Used inventory, vendor-status, and pricing MCP tools; found 0 units of CC-TEE-WHITE size S and a shortage of 1.",
+        "Accounting": "Used cash, invoice, and pricing tools; found invoice 501 open/overdue and cash-feasible, but requiring reconciliation and approval.",
+        "Customer Service": "Drafted a customer update that states the size is unavailable without promising a date."
+      },
+      "mcp_tools": ["get_ticket_inventory", "get_vendor_shipping_status", "get_product_pricing", "get_shop_cash", "get_ticket_invoice"],
+      "human_approvals": [],
+      "cash_change": 0.0
+    },
+    {
+      "id": 102,
+      "final_status": "resolved",
+      "short_outcome": "Escalated the rent notice: lease 1 shows $2,400 due September 2, 2026; payment status, any late fees, and human approval remain required.",
+      "agents": {
+        "Boss": "Delegated first to Facilities and made the final escalation decision.",
+        "Facilities": "Used the lease tool; identified the Chapel Street shop lease, landlord, $2,400 monthly rent, and overdue status.",
+        "Accounting": "No separate Accounting agent run occurred; Boss's decision requires Accounting to verify payment status before any approval."
+      },
+      "mcp_tools": ["get_ticket_lease"],
+      "human_approvals": [],
+      "cash_change": 0.0
+    },
+    {
+      "id": 103,
+      "final_status": "resolved",
+      "short_outcome": "Held the bulk request pending vendor confirmation and commercial approval: 8 size-M hoodies are in stock, leaving a shortage of 12.",
+      "agents": {
+        "Boss": "Delegated Inventory first, then Accounting, and held the sale pending missing vendor and discount facts.",
+        "Inventory": "Used inventory, vendor-status, and pricing tools; found 8 in stock, a shortage of 12, and QuickShip CT with a 1-day lead time and no unpaid balance.",
+        "Accounting": "Used cash and pricing tools; confirmed $22 cost, $58 list price, and required approval of a specific discount and purchase.",
+        "Customer Service": "Was not called because no customer-facing promise was ready to draft."
+      },
+      "mcp_tools": ["get_ticket_inventory", "get_vendor_shipping_status", "get_product_pricing", "get_shop_cash"],
+      "human_approvals": [],
+      "cash_change": 0.0
+    }
+  ]
+}
