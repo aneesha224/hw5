@@ -44,7 +44,17 @@ A log of the prompts I typed to the AI assistant while working through the homew
 
 ## Problem 10: Reflection
 
+> I want to add my reflections to output/desk_tickets.html. can you open it?
+
 > Update the Reflection tab in output/desk_tickets.html with brief but detailed answers tied to the Campus Customs app, tickets 101–103, the Expected and Actual ticket tabs, and the Cash tab. Evaluate agent performance, compare Actual to Expected, explain what could be simpler as one agent with tools, identify three solvable and three currently unsolvable Campus Customs problems, and name the missing tools/agents for the unsolvable problems.
+
+> I want you to update the reflections tab with detailed, specific answers to the questions below. While you should be detailed, don't be overly wrong - keep it brief. Make sure that you tie every answer to this specific app and the 3 tickets we ran. Use the ticket tabs and Cash tabs on the same page as your evidence. Again, there have to be relevant Campus Customs details
+>
+> - How would you evaluate the performance of the agents on each ticket and why?
+> - For each ticket, how did Actual compare to the Expected plan you wrote earlier?
+> - What would have been simpler as one agent with tools — and why?
+> - Describe three new problems Campus Customs might face that this agent team could solve with the tools you built
+> - Describe three new problems Campus Customs might face that this agent team could not solve with the tools you built, and explain the tools and agents you would need to solve them
 
 ## Problem 11: Submit to GitHub
 
