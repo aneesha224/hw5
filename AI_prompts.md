@@ -6,7 +6,7 @@ A log of the prompts I typed to the AI assistant while working through the homew
 
 ## Problem 1
 
-> Add the prompts used for Problem 1 here as the homework progresses.
+> We're working on homework 5 today so put a joke in the folder. It's the same as before, create an AI prompts log and keep it updated by problem
 
 ## Problem 2: Study the Campus Customs database
 
@@ -36,6 +36,8 @@ A log of the prompts I typed to the AI assistant while working through the homew
 
 > Build the frontend dashboard in frontend/ with React + Vite + TypeScript. The page should call the backend routes at http://localhost:8000, list all three tickets, let a human select and run one, show each agent's activity and summary, mark completed tickets resolved, support human payment approval, and show checking balance changes. Make it minimalistic, easy to use, and use shades of blue and green. Add output/design.md explaining the layout, agent readability, resolved state, cash display, and creative human-centered choices. Start it with `npm run dev`.
 
+> The dashboard isn't intuitive or easy to use. I don't need the long title or subtitle for it. The 'resolved' button looks greyed out and it isn't clear what its purpose is. I want a functional, easy-to-understand dashboard. Get inspired by how Power BI dashboards look and function.
+
 ## Problem 9: Resolve the tickets
 
 > Reset data/campus_customs_new.db, note the starting checking balance, run tickets 101, 102, and 103 until resolved, fill the Actual sections in output/desk_tickets.html, itemize cash on the Cash tab, save output/resolved_tickets.json and output/resolved_board.html, append real runs to output/audit_trail.json, and finish output/harness.md.
@@ -43,3 +45,7 @@ A log of the prompts I typed to the AI assistant while working through the homew
 ## Problem 10: Reflection
 
 > Update the Reflection tab in output/desk_tickets.html with brief but detailed answers tied to the Campus Customs app, tickets 101–103, the Expected and Actual ticket tabs, and the Cash tab. Evaluate agent performance, compare Actual to Expected, explain what could be simpler as one agent with tools, identify three solvable and three currently unsolvable Campus Customs problems, and name the missing tools/agents for the unsolvable problems.
+
+## Problem 11: Submit to GitHub
+
+> Push the code to a public GitHub repository so graders can clone it. Give me the repo URL and also put it in output/github_url.txt. Do not push my real .env to the GitHub repo. Do include both database files under data/ (the original and our working copy) so graders can run the app easily. Match the expected hw5 layout. README should explain how to copy the original DB to the working copy for a clean run, start the MCP server, start the FastAPI backend, start the React board, and reset the DB before a full three-ticket run.
